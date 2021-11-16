@@ -1,6 +1,7 @@
 // this creates a function named "fight"
 
-function fight() {
+var fight = function fight(enemyName) {
+  ...// fight function statements
     window.alert("The fight has begun!");
 }
 var playerName = window.prompt("What is your robot's name?");
@@ -11,7 +12,7 @@ var playerMoney = 10;
 //You can also log multiple values at once like this 
 console.log(playerName, playerAttack, playerHealth);
 
-var enemyName = "Roborto";
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"]; 
 var enemyHealth = 50;
 var enemyAttack = 12;
 
@@ -49,7 +50,7 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
     // if player choses to skip
   } else if (promptFight === "skip" || promptFight === "SKIP") {
     // confirm player wants to skip
-   var confirmSkip = window.confirm(Are you sure you'd like to quiy");
+   var confirmSkip = window.confirm(Are you sure you'd like to quit);
   // if yes (true), leave fight
   if (confirmSkip) {
     window.alert(playerName + " has decided to skip this fight. Goodbye!");
